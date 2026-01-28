@@ -24,7 +24,7 @@ const playlist = [
 const dashboard = {
   createView(request, response) {
     logger.info("Dashboard page loading!")
-    logger.debug("Loading the playlist", playlist);
+    logger.debug(`Loading the playlist ${playlist}`);
     response.json(playlist);   
   },
 };
